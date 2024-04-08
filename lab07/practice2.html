@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #dummyText {
+            border-width: 1px;
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+
+<p id="dummyText">T1 Faker </p>
+
+
+<label for="borderColorInputR">Enter R value for Border color:</label><br>
+<input type="text" id="borderColorInputR" name="borderColorInput"><br>
+<label for="borderColorInputG">Enter G value for Border color:</label><br>
+<input type="text" id="borderColorInputG" name="borderColorInput"><br>
+<label for="borderColorInputB">Enter B value for Border color:</label><br>
+<input type="text" id="borderColorInputB" name="borderColorInput"><br>
+
+<label for="backgroundColorInputR">Enter R value for Background color:</label><br>
+<input type="text" id="backgroundColorInputR" name="backgroundColorInput"><br>
+<label for="backgroundColorInputG">Enter G value for Background color:</label><br>
+<input type="text" id="backgroundColorInputG" name="backgroundColorInput"><br>
+<label for="backgroundColorInputB">Enter B value for Background color:</label><br>
+<input type="text" id="backgroundColorInputB" name="backgroundColorInput"><br>
+
+<label for="borderWidth">Enter border width:</label><br>
+<input type="text" id="borderWidth" name="borderWidth"><br>
+
+<button onclick="changeStyle()">Apply changes</button>
+
+<script>
+function changeStyle() {
+    var borderColorR = document.getElementById("borderColorInputR").value;
+    var borderColorG = document.getElementById("borderColorInputG").value;
+    var borderColorB = document.getElementById("borderColorInputB").value;
+    var backgroundColorR = document.getElementById("backgroundColorInputR").value;
+    var backgroundColorG = document.getElementById("backgroundColorInputG").value;
+    var backgroundColorB = document.getElementById("backgroundColorInputB").value;
+    var borderWidth = document.getElementById("borderWidth").value;
+
+    var textElement = document.getElementById("dummyText");
+
+    
+    textElement.style.borderColor = "rgb(" + borderColorR + "," + borderColorG + "," + borderColorB + ")";
+    textElement.style.backgroundColor = "rgb(" + backgroundColorR + "," + backgroundColorG + "," + backgroundColorB + ")";
+    textElement.style.borderWidth = borderWidth + "px";
+}
+</script>
+
+</body>
+</html>

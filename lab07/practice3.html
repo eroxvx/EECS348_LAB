@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Check Password</h2>
+
+<label for="pwd1">Enter password:</label><br>
+<input type="pwd" id="pwd1" name="pwd1"><br>
+
+<label for="pwd2">Re-Enter password:</label><br>
+<input type="pwd" id="pwd2" name="pwd2"><br>
+
+<button onclick="checkPassword()">pwd</button>
+
+<script>
+function checkPassword() {
+    var pwd1 = document.getElementById("pwd1").value;
+    var pwd2 = document.getElementById("pwd2").value;
+
+    if (pwd1.length < 8 || pwd2.length < 8) {
+        alert("Your password must be at least 8 characters long.");
+    } else if (pwd1 !== pwd2) {
+        alert("The two passwords don't match.");
+    } else {
+        alert("The two passwords match.");
+    }
+}
+</script>
+
+</body>
+</html>
