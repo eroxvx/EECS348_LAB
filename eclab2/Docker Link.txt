@@ -1,0 +1,9 @@
+task2
+
+http://localhost:8080/practice1.html
+
+https://hub.docker.com/layers/bluenone/eclab2_docker/extra/images/sha256:80be976dd7b15395f8dcea9f340bebc3883e875b102f8a11fe3f58fdadfd98b7?uuid=37017617-CA97-4D8D-9C1A-29836E60237D
+
+task3
+
+https://hub.docker.com/layers/bluenone/eclab2_docker/task3/images/sha256:78d1b1887cd03b9ac26a7de59fd1a89f02bc2e57445e656ab6a91bc2fe13f550?uuid=37017617-CA97-4D8D-9C1A-29836E60237D
